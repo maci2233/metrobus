@@ -7,5 +7,6 @@ Base = declarative_base()
 class Metrobus(Base):
     __tablename__ = "Metrobus"
     id = Column(Integer, primary_key=True)
+    id_metrobus = Column(String)
     name = Column(String)
     mayor = Column(String)
