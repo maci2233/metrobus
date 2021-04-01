@@ -16,5 +16,7 @@ services:
 #      - DB_NAME=postgres
 #      - DB_USERNAME=postgres
 #      - DB_PASSWORD=password
+#      - METROBUS_DATA_FILENAME=metrobus_data.csv
+
 
 
