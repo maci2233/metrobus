@@ -7,16 +7,16 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_PASSWORD=password
-#  consumer:
-#    image: metrobus_consumer
-#    container_name: consumer
-#    ports:
-#      - 8080:8080
-#    environment:
-#      - DB_NAME=postgres
-#      - DB_USERNAME=postgres
-#      - DB_PASSWORD=password
-#      - METROBUS_DATA_FILENAME=metrobus_data.csv
+  consumer:
+    image: metrobus_consumer
+    container_name: consumer
+    ports:
+      - 8080:8080
+  api:
+    image: metrobus_rest_api
+    container_name: metrobus_rest_api
+    ports:
+      - 8000:8000
 
 
 
