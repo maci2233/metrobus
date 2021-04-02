@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=password
   consumer:
     build: ./data_consumer
-    container_name: consumer
+    container_name: metrobus_consumer
     ports:
       - 8080:8080
     depends_on:
