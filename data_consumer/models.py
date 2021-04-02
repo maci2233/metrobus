@@ -10,7 +10,7 @@ class Metrobus(Base):
     """
     __tablename__ = "Metrobus"
     id = Column(Integer, primary_key=True)
-    id_metrobus = Column(String)
+    id_metrobus = Column(Integer)
     delegation = Column(String)
-    latitute = Column(Float)
+    latitude = Column(Float)
     longitude = Column(Float)

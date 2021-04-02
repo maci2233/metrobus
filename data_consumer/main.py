@@ -19,7 +19,7 @@ def storeMetrobusData():
     metrobus_list = MetrobusMapService.map_metrobus_df_to_metrobus_models(metrobus_df)
     #for each metrobus model we find its delegation based on its coordinates and then store it in the DB
     for metrobus in metrobus_list:
-        metrobus_coords = (metrobus.latitute, metrobus.longitude)
+        metrobus_coords = (metrobus.latitude, metrobus.longitude)
         closest_delegation = GeoLocationService.find_closest_location_name_from_coords(delegation_coords, metrobus_coords)
         metrobus.delegation = closest_delegation
         db.insert_data(metrobus)

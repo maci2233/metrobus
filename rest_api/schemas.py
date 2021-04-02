@@ -1,9 +1,10 @@
 from pydantic import BaseModel
 
 class MetrobusBase(BaseModel):
-    name: str
-    id_metrobus: str
-    mayor: str
+    id_metrobus: int
+    delegation: str
+    latitude: float
+    longitude: float
 
 class MetrobusCreate(MetrobusBase):
     pass

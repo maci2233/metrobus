@@ -54,7 +54,7 @@ class MetrobusMapService:
         for ind in metrobus_df.index:
             metrobus = Metrobus()
             metrobus.id_metrobus = int(metrobus_df[VEHICLE_ID][ind])
-            metrobus.latitute = float(metrobus_df[LATITUDE][ind])
+            metrobus.latitude = float(metrobus_df[LATITUDE][ind])
             metrobus.longitude = float(metrobus_df[LONGITUDE][ind])
             metrobus_list.append(metrobus)
         return metrobus_list
