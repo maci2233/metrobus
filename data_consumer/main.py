@@ -53,5 +53,5 @@ if __name__ == "__main__":
 
     #Create scheduler job to persist storeMetrobusData every X amount of seconds
     scheduler = BlockingScheduler()
-    scheduler.add_job(storeMetrobusData, 'interval', seconds=10)
+    scheduler.add_job(storeMetrobusData, 'interval', seconds=30)
     scheduler.start()

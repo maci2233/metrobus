@@ -11,7 +11,7 @@ class ORMService:
         ORMService Constructor.
         Create an engine that connects to the postgres DB and start a Session used for DB petitions.
         """
-        self.engine = create_engine('postgresql+psycopg2://postgres:password@localhost/postgres', echo=True)
+        self.engine = create_engine('postgresql+psycopg2://postgres:password@db/postgres', echo=True)
         Session = sessionmaker(bind=self.engine)
         self.session = Session()
 

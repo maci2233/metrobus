@@ -8,15 +8,20 @@ services:
     environment:
       - POSTGRES_PASSWORD=password
   consumer:
-    image: metrobus_consumer
+    build: ./data_consumer
     container_name: consumer
     ports:
       - 8080:8080
+    depends_on:
+      - db
   api:
-    image: metrobus_rest_api
+    build: ./rest_api
     container_name: metrobus_rest_api
     ports:
       - 8000:8000
+    depends_on:
+      - db
+      - consumer
 
 
 
