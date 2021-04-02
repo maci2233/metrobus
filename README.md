@@ -6,6 +6,8 @@ To run the project docker is needed, so assuming it is installed properly run:
 
 *docker-compose up -d*
 
+![Metrobus Diagram](metrobus_diagram.png)
+
 ---
 
 **Metrobus Consumer**
