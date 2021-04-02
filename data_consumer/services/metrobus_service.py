@@ -53,7 +53,6 @@ class MetrobusMapService:
         metrobus_list = []
         for ind in metrobus_df.index:
             metrobus = Metrobus()
-            metrobus.mayor = "CDMX"
             metrobus.id_metrobus = int(metrobus_df[VEHICLE_ID][ind])
             metrobus.latitute = float(metrobus_df[LATITUDE][ind])
             metrobus.longitude = float(metrobus_df[LONGITUDE][ind])

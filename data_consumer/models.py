@@ -11,6 +11,6 @@ class Metrobus(Base):
     __tablename__ = "Metrobus"
     id = Column(Integer, primary_key=True)
     id_metrobus = Column(String)
-    mayor = Column(String)
+    delegation = Column(String)
     latitute = Column(Float)
     longitude = Column(Float)
