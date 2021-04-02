@@ -37,7 +37,7 @@ def get_delegations_coords(delegation_list):
     """
     delegation_coords = {}
     for delegation in delegation_list:
-        coords = GeoLocationService.get_coords_from_location_name(f"{delegation}, {MEXICO_CITY}")
+        coords = GeoLocationService.get_geo_info_from_location_name(f"{delegation}, {MEXICO_CITY}")
         delegation_coords[delegation] = (float(coords["lat"]), float(coords["lon"]))
     return delegation_coords
 
